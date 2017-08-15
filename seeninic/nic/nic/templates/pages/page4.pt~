@@ -1,0 +1,96 @@
+<html>
+<title>Income details</title>
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5A5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+h1 { 
+font-size: 1em; 
+}
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { 
+text-transform: uppercase; 
+}
+#entrychoices {
+margin: 80px auto;
+width: 300px;
+}
+.center{
+	margin: auto;       
+	width: 60%;
+        padding: 10px;
+        
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+.box{
+        padding: 10px;
+        display: none;
+        margin-top: none;
+        border: none;
+    }
+    .yes{
+	colour:#00ff00;
+	 }    
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="yes"){
+            $(".box").not("yes").hide();
+            $(".box").show();
+        }
+        if($(this).attr("value")=="no"){
+            $(".box").not("no").hide();
+            
+        }
+       
+    });
+});
+
+    </script>
+<body>
+<div id="entrychoices">
+<h1><strong>INCOME DETAILS</strong></h1>
+<form action="/submit3" method="post">
+<fieldset>
+for rented house: 
+<div class="yes box">Monthly Rent:<input type="text" name="rent">
+HRA Debate Claimed:<input type="text" name="hra">
+</div><br>
+<div class="no box"></div>
+ Annual salary income: <input type="text" name="aincome">
+ Any other income: <input type="text" name="oincome"><br>
+ Transport Allowance:<input type="text" name="ta"><br>
+ Proof Tax Paid:<input type="text" name="ptax"><br>
+ Income from House property:<input type="text" name="hincome"><br>
+ <p>Gross Total Amount: ${amt}</p>
+ <p>${msg}</p>
+<div class="center">
+<p><input type="submit" onclick="location.href='/submit3';" value="submit"></p><br>
+</div>
+
+</form>
+</html>

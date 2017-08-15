@@ -1,0 +1,101 @@
+<html>
+<title>third page</title>
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5A5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+h1 { 
+font-size: 1em; 
+}
+h1, p {
+margin-bottom: 5px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { 
+text-transform: uppercase; 
+}
+#entrychoices {
+margin: 80px auto;
+width: 300px;
+}
+.center{
+	margin: auto;       
+	width: 40%;
+        padding: 20px;
+        
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+
+  .box{
+        padding: 20px;
+        display: none;
+        margin-top: none;
+        border: none;
+    }
+    .yes{
+	colour:#00ff00;
+	 }    
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="yes"){
+            $(".box").not("yes").hide();
+            $(".box").show();
+        }
+        if($(this).attr("value")=="no"){
+            $(".box").not("no").hide();
+            
+        }
+       
+    });
+});
+
+    </script>
+
+<body>
+<div id="entrychoices">
+<h1><strong>PERSONAL DETAILS</strong></h1>
+<form action="/submit2" method="post">
+<fieldset>
+First name: <input type="text" name="firstname">
+ Employee id:<input type="text" name="lastname">
+ Designation :<input type="text" name="designation">
+ place of posting: <input type="text" name="place">
+ <div>
+spouse is working: <input type="radio" name="work"value="yes">yes <input type="radio" name="work" value="no">no
+</div><br>
+<div class="yes box">Name of the org:<input type="text" name="org">
+Address:<input type="text" name="addr"></div>
+<div class="no box"></div>
+Address of residence:<input type="text" name="work1">
+<div class="center">
+<form action="/submit2">
+<p>${msg}</p>
+<p><input type="submit" onclick="location.href='/submit2';" value="next"></p><br>
+</form>
+</div>
+
+</form>
+</html>
+

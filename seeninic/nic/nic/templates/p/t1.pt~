@@ -1,0 +1,10 @@
+<html>
+<body>
+<input type="text" name="username" placeholder="Enter username" />
+<input type="text" name="password" placeholder="Enter password" />
+<form action="/view1" method="post" >
+<input type="submit" value="sign in" />
+</form>
+
+</body>
+</html>

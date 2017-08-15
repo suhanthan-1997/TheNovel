@@ -1,0 +1,11 @@
+<html>
+<body>
+<form action="/signup1" method="post" >
+<input type="text" name="username" placeholder="Enter username" />
+<input type="text" name="password" placeholder="Enter password" />
+
+<input type="submit" value="Register" />
+</form>
+
+</body>
+</html>

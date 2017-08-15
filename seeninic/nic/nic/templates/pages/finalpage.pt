@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+    background-color: white;
+    width: 500px;
+    padding: 25px;
+    border: 2px solid black;;
+    margin: 250px auto;
+    text-align:center;
+    
+}
+</style>
+<body bgcolor="C5E3DF">
+<div>
+<h3>Your Files have been uploaded successfully!!!</h3>
+</div>
+</body>
+</html>

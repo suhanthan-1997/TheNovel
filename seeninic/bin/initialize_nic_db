@@ -1,0 +1,10 @@
+#!/home/seenivas/seeninic/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'nic','console_scripts','initialize_nic_db'
+__requires__ = 'nic'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('nic', 'console_scripts', 'initialize_nic_db')()
+    )

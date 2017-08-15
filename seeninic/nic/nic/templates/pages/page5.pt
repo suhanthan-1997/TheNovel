@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dropdowns</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.bs-example{
+    	margin: 120px auto;
+        Width: 300px;
+    }
+#entrychoices {
+margin: 80px auto;
+width: 300px;
+ 
+}
+.center{
+	margin: auto;       
+	width: 40%;
+        padding: none;
+        
+}
+
+
+</style>
+</head>
+<body>
+<div id="entrychoices">
+<h4><strong>SAVINGS DETAILS</strong></h4>
+   <div class="dropdown">
+        CHOOSE OPTION:
+        
+        <br>      
+       <a  data-toggle="dropdown" class="dropdown-toggle"><input type="radio" name="policy" value="80C">80C <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="Insurance policies" data-href="/submit4">Insurance poicies</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="Pensioners plan" data-href="/submit4a">Pensioners plan</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="UTI/PPF" data-href="/submit4c">UTI/PPF</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="GPF+Group insurance" data-href="/submit4d">GPF+Group insurance</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="Tution fees" data-href="/submit4e">Tution fees</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="Equity fund" data-href="/submit4f">Equity fund</a></li>
+          <li><a  tabindex="-1" ><input type="radio" name="button" value="Principal amount repaid under housing loan" data-href="/submit4g">Principal amount repaid under housing loan</a></li>
+          
+</ul>
+       
+<p><input type="radio" name="button" value="80D" data-href="/submit4h">80D</p>
+<p><input type="radio" name="button" value="80DD" data-href="/submit4i">80DD</p>
+<p><input type="radio" name="button" value="80E" data-href="/submit4k">80E</p>
+<p><input type="radio" name="button" value="80G" data-href="/submit4l">80G</p>
+<p><input type="radio" name="button" value="80U" data-href="/submit4m">80U</p>
+    </div>
+
+</div>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+  </script>
+
+<input type="submit" value="submit" id="btnFormSubmit" onclick="submit" style="width: 100px; margin: 90px; display: inline-block;position:relative;float:right ;" />
+
+<script>
+var submit = document.getElementById('btnFormSubmit');
+submit.addEventListener('click', submitForm);
+
+function submitForm(event){
+event.preventDefault();
+event.stopPropagation();
+
+var href = '',
+inputs = this.parentNode.getElementsByTagName('input')
+    for(var i=0;i<inputs.length;i++){
+         if(inputs[i].getAttribute('name') == 'button' && inputs[i].checked){
+             href = inputs[i].getAttribute('data-href');
+             window.location = href;
+         }
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+          

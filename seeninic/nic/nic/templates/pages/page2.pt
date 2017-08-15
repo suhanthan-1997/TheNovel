@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Income tax</title>
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5A5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+#entrychoices {
+margin: 120px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 500px;
+outline: none;
+padding: 0px 100px;
+width: 280px;
+-webkit-appearance:none;
+}
+</style>
+</head>
+<body>
+<div id="entrychoices">
+<h1><strong>Welcome ${username}</strong></h1>
+<form action="javascript:void(0);" method="post">
+<fieldset>
+<p><a href="/submit1">Submit forms</a></p>
+<p><a href="cp.html">Change Password</a></p>
+<p><a href="page11.html">Check status</a></p>
+
+</form>
+

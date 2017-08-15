@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Newsfeed</title>
+<style type="text/css">
+body {
+background-color: #808080;
+color: #000000;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+#entrychoices {
+margin: 120px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 500px;
+outline: none;
+padding: 0px 100px;
+width: 280px;
+-webkit-appearance:none;
+}
+fieldset {
+background-color: #008080;
+padding:10px;
+margin:40px;	
+}
+.right{
+   color: #000040;
+   position:absolute;
+   top:40px;
+   right:30px;
+  }
+.rig{
+   color: #000040;
+   position:absolute;
+   top:40px;
+   right:180px;
+  }
+
+input[type="submit"] {
+	background-color: #000040;
+	border: none;
+text-align:center;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #ffffff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 40px;
+text-transform: uppercase;
+width: 100px;
+
+}
+.rit{
+	text-align:center;
+	background-color:;
+	margin:100px; 
+
+		
+}
+.rt{
+   color: #ffffff;
+   position:absolute;
+	border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+
+   top:40px;
+   right:350px;
+	background-color:#000040;
+	
+  }
+
+
+</style>
+</head>
+<body>
+<div class="rt" >
+<h1>${name}</h1>
+</div>
+
+<div class="right">
+<form action="/" method="post">    
+<input type="submit" value="logout" />
+</form>
+</div>
+<div class="rig">
+<form action="/tomenu" method="post">    
+<input type="submit" value="Menu" />
+</form>
+</div>
+
+<div class="rit">
+<h2><italic>Newsfeed</italic></h2>
+<fieldset>
+<h2>username:${obj[0].username}</h2>
+<h>About:${obj[0].about}</h>
+<h3>content: ${obj[0].content}</h3>
+<h>submitted@${obj[0].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[1].username}</h2>
+<h>About:${obj[1].about}</h>
+<h3>content: ${obj[1].content}</h3>
+<h>submitted@${obj[1].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[2].username}</h2>
+<h>About:${obj[2].about}</h>
+<h3>content: ${obj[2].content}</h3>
+<h>submitted@${obj[2].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[3].username}</h2>
+<h>About:${obj[3].about}</h>
+<h3>content: ${obj[3].content}</h3>
+<h>submitted@${obj[3].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[4].username}</h2>
+<h>About:${obj[4].about}</h>
+<h3>content: ${obj[4].content}</h3>
+<h>submitted@${obj[4].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[5].username}</h2>
+<h>About:${obj[5].about}</h>
+<h3>content: ${obj[5].content}</h3>
+<h>submitted@${obj[5].submitted_time}</h>
+</fieldset>
+<fieldset>
+<h2>username:${obj[6].username}</h2>
+<h>About:${obj[6].about}</h>
+<h3>content: ${obj[6].content}</h3>
+<h>submitted@${obj[6].submitted_time}</h>
+</fieldset>
+</div>

@@ -1,0 +1,3 @@
+[run]
+source = nic
+omit = nic/test*

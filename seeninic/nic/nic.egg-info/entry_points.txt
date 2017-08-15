@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = nic:main
+      [console_scripts]
+      initialize_nic_db = nic.scripts.initializedb:main
+      

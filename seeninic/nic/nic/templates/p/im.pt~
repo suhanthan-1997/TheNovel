@@ -1,0 +1,12 @@
+<html>
+<body>
+<form action="/h" method="post" accept-charset="utf-8"
+      enctype="multipart/form-data">
+
+    <label for="mp3">Mp3</label>
+    <input id="mp3" name="mp3" type="file" value="" />
+
+    <input type="submit" value="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+def includeme(config):
+    config.add_static_view('static', 'static', cache_max_age=3600)
+    config.add_route('home', '/')
+    config.add_route('login1', '/login1')
+    config.add_route('signup', '/signup')
+    config.add_route('signup1', '/signup1')
+    config.add_route('signupf', '/signupf')
+    config.add_route('update', '/update')
+    config.add_route('update1', '/update1')
+    config.add_route('news', '/news')
+    config.add_route('tomenu', '/tomenu')

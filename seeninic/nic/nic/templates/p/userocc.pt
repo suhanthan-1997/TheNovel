@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>E-blog Login</title>
+<style type="text/css">
+body {
+background-color: #808080;
+color: #000000;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+
+}
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+#login {
+margin: 80px auto;
+width: 300px;
+
+}
+#signup{
+
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+input[type="submit"] {
+background-color: #000040;
+border: none;
+margin:25px;
+text-align:center;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #ffffff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: ;
+margin: 10px auto;
+width: 300px;
+
+}
+
+</style>
+</head>
+<body>
+<div id="login">
+<fieldset>
+<h1><strong>${message}<br>Try another username</strong></h1>
+<form action="/signup" method="post">
+
+
+<input type="submit" value="Try again" />
+
+
+</body>
+</html>

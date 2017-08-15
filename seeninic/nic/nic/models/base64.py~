@@ -1,0 +1,14 @@
+from sqlalchemy import (
+    Column,
+    Index,
+    Integer,
+    Text,
+)
+
+from .meta import Base
+
+
+class base64(Base):
+    __tablename__ = 'base64'
+    id = Column(Text, primary_key=True)
+    content = Column(Text)

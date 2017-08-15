@@ -1,0 +1,69 @@
+<html>
+<title>third page</title>
+<style type="text/css">
+body {
+background-color: #f4f4f4;
+color: #5A5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+h1 { 
+font-size: 1em; 
+}
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { 
+text-transform: uppercase; 
+}
+#entrychoices {
+margin: 80px auto;
+width: 300px;
+}
+.center{
+	margin: auto;       
+	width: 40%;
+        padding: 10px;
+        
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+</style>
+<body>
+<div id="entrychoices">
+<h1><strong>80G</strong></h1>
+<form action="/submit3a;" method="post">
+<fieldset>
+
+Doc no:<input type="text" name="docno"> Annual Amount:<input type="text" name="amt">
+<div class="center">
+<img src="CLIP.png" style="width:22px;height:22px;border:0;">
+<input type="submit" value="upload">
+</div>
+<p>${msg}</p>
+ <div class="center">
+<form action="page5.html">
+<p><input type="submit" onclick="location.href='/submit3a';" value="select"> <input type="Submit" onclick="location.href='/submit5';" value="Finish"></p><br>
+</form>
+</div>
+
+</form>
+</html>
+

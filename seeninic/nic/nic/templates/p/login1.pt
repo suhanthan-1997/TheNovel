@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>${name}'s profile</title>
+<style type="text/css">
+body {
+background-color: #808080;
+color: #000000;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+#entrychoices {
+margin: 50px auto;
+width: 300px;
+}
+form fieldset input[type="submit"] {
+background-color: #000040;
+border: none;
+text-align:center;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #ffffff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+padding:0px;
+margin:10px;
+text-transform: uppercase;
+width: 280px;
+
+}
+.right{
+   color: #000040;
+   position:absolute;
+   top:50px;
+   right:30px;
+  }
+input[type="submit"] {
+	background-color: #000040;
+	border: none;
+text-align:center;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #ffffff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 40px;
+text-transform: uppercase;
+width: 100px;
+
+}
+.rt{
+   color: #ffffff;
+   position:absolute;
+	border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+
+   top:50px;
+   right:250px;
+	background-color:#000040;
+	
+  }
+.login {
+
+margin:50px;
+padding:20px;
+left:2000px;
+text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+<div class="rt" >
+<h1>${name}</h1>
+</div>
+<div class="login">
+<h1><strong>Menu</strong></h1>
+</div>
+
+<div class="right">
+
+<form action="/" method="post">    
+<input type="submit" value="logout" />
+
+</form></div>
+<div id="entrychoices">
+<h1><strong></strong></h1>
+<form action="/update" method="post">
+<fieldset>
+<input type="submit" value="to update" />
+</form>
+<br>
+<form action="/news" method="post">    
+<input type="submit" value="to view news" />
+</form>
+		

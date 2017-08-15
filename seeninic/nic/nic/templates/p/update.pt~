@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>${name}'s profile</title>
+<style type="text/css">
+body {
+background-color: #808080;
+color: #000000;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+h1 { font-size: 1em; }
+h1, p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+#entrychoices {
+margin: 120px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 50px;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 50px;
+outline: none;
+padding: 0px 100px;
+width: 280px;
+-webkit-appearance:none;
+}
+form fieldset input[type="textarea"] {
+background-color: #C9E1EC;
+border: none;
+border-radius: 50px;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 250px;
+outline: none;
+padding: 0px 100px;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset textarea {
+background-color: #C9E1EC;
+border: none;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+color: #OF2C6B;
+font-family: 'Comic Sans',Arial, Helvetica, sans-serif ;
+font-size: 14px;
+height: 250px;
+outline: none;
+padding: 0px 10px;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+margin:15px;
+position:relative;	
+}
+
+.right{
+   color: #000040;
+   position:absolute;
+   top:50px;
+   right:30px;
+  }
+input[type="submit"] {
+	background-color: #000040;
+	border: none;
+text-align:center;
+border-radius: 30px;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+color: #ffffff;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 40px;
+text-transform: uppercase;
+width: 100px;
+
+}
+.rt{
+   color: #ffffff;
+   position:absolute;
+	border-radius: 6px;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+
+   top:50px;
+   right:350px;
+	background-color:#000040;
+	
+  }
+
+.rig{
+   color: #000040;
+   position:absolute;
+   top:50px;
+   right:180px;
+  }
+
+</style>
+</head>
+<body>
+<div class="rt" >
+<h1>${name}</h1>
+</div>
+
+<div class="right">
+<form action="/" method="post">    
+<input type="submit" value="logout" />
+</form>
+</div>
+<div class="rig">
+<form action="/tomenu" method="post">    
+<input type="submit" value="Menu" />
+</form>
+</div>
+
+<div id="entrychoices">
+<form action="/update1" method="post" >
+<fieldset>
+<h1>About:</h1><input type="text" name="about" placeholder="Enter title" /> 
+<br>
+<h1>content:</h1><textarea rows="5" cols="20" name="content" placeholder="Enter content"></textarea> 
+<br>
+<input type="submit" value="update" />	
+</form> 
+
